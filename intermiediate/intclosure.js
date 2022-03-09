@@ -1,18 +1,10 @@
-
-
-function parent(name) 
-{var name = "Dave"
-function closure()
-    return function (closure) {
-      return `${Dave}! ${closure}`;
+function parent(x) {
+    return function closure() {
+      return x;
     };
   }
   
   const remember = parent("remembers me");
   
-  
-  
-  
-  closure(remember);
-  // Returns "remembers me" because the inner
-  // function remembers x.
+  console.log("remember:", remember("x"));
+ 
