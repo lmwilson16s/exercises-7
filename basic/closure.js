@@ -1,8 +1,13 @@
-
-const str = "Ball"
-
 function redundantReturn(){
-    console.log(str)
+    const myStr= "str";
+
+    function returnString() {
+        console.log(myStr);
+    }
+
+    returnString();
 }
 
-redeuntReturn()
+redundantReturn
+
+
