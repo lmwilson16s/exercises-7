@@ -4,4 +4,8 @@ getBudgets([
     { name: "Martin",  age: 16, budget: 2700 }
   ])
 
-const getBudgetsSum = getBudgets.sum((budget)) => 
+  function getBudgets(arr) {
+    return arr
+      .map(obj => Object.values(obj)[2])
+      .reduce((acc, curr) => acc + curr);
+    }
